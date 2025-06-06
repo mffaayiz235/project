@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M.F. Mohammed Faayiz - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f4f9ff;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth; /* Smooth scrolling */
+    }
+
+    header {
+      background: linear-gradient(to right, #0077b6, #0096c7);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    /* Profile image animation */
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      animation: bounceIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+      animation: fadeIn 2.5s ease-in;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 960px;
+      margin: auto;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    h2 {
+      color: #0077b6;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    ul {
+      padding-left: 20px;
+      list-style-type: square;
+    }
+
+    .project, .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .project:hover, .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Fade-in animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Profile image bounce */
+    @keyframes bounceIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #023e8a;
+      color: white;
+    }
+
+    a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Smooth Hover Effect for Links */
+    nav a:hover, .contact a:hover {
+      color: #ffd166;
+      transition: color 0.3s ease;
+    }
+
+    /* Text Animation */
+    .contact p {
+      margin-bottom: 10px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .contact h2 {
+      color: #023e8a;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="photo.jpeg" alt="M.F. Mohammed Faayiz" />
+    <h1>M.F. Mohammed Faayiz</h1>
+    <p>Software Developer | Web Technologist | AI Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Career Objective</h2>
+    <p>To develop innovative, scalable software solutions that enhance user experience and drive product growth in a dynamic, product-based company. Passionate about software development, IoT, and creative design, with a strong foundation in data structures and web technologies.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <img src="ed.jpg" alt="Education" />
+    <ul>
+      <li><strong>B.Tech in Information Technology</strong> (2022–2026), M. Kumarasamy College of Engineering, Karur — CGPA: 7.5</li>
+      <li><strong>HSC</strong> (2021–2022), Crescent MHSS, Karur — 74%</li>
+      <li><strong>SSLC</strong> (2019–2020), Crescent MHSS, Karur — 84%</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <img src="skill.jpg" alt="skill" />
+    <div class="card">
+      <h3>Technical</h3>
+      <ul>
+        <li>Languages: Python, C, Java</li>
+        <li>Web: HTML, CSS, JavaScript, MySQL</li>
+        <li>Tools: GitHub, VS Code, Canva</li>
+        <li>Database: MySQL, MongoDB</li>
+        <li>Cloud: Microsoft Azure</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Critical Thinking, Time Management, Leadership</li>
+        <li>Communication, Adaptability</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <img src="ration.jpg" alt="E-Ration System">
+      <h3>E-Ration Web Application</h3>
+      <p><strong>Tech:</strong> HTML, CSS, PHP, MySQL</p>
+      <p>Helps users check ration shop availability and stock updates in real-time.</p>
+    </div>
+
+    <div class="project">
+      <img src="due.jpg" alt="No Due Form System">
+      <h3>Web-Based No Due Form</h3>
+      <p><strong>Tech:</strong> HTML, CSS, JS, PHP, MySQL</p>
+      <p>Automates clearance requests and generates No Due forms efficiently.</p>
+    </div>
+
+    <div class="project">
+      <img src="ai.jpg" alt="Food AI System">
+      <h3>Food Classification & Nutrition AI</h3>
+      <p><strong>Tech:</strong> Python</p>
+      <p>AI system for recognizing food and providing calorie/macronutrient data.</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <img src="certificate.jpg" alt="certificate" />
+    <ul>
+      <li>Industry 4.0 & IoT – NPTEL</li>
+      <li>PHP & MySQL – Stack and Queue</li>
+      <li>Cloud Infrastructure – Oracle</li>
+      <li>Cisco: Cybersecurity, JavaScript, Data Science</li>
+      <li>Microsoft Azure Fundamentals (AZ-900)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><strong>Location:</strong> Karur, Tamil Nadu</p>
+    <p><strong>Email:</strong> <a href="mailto:mffaayiz235@gmail.com">mffaayiz235@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+917305852980">+91 7305852980</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/m-f-faayiz-5a914725a" target="_blank">View Profile</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/mffaayiz235" target="_blank">View Projects</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 M.F. Mohammed Faayiz. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
